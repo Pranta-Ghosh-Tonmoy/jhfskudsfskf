@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Tech Mart</title>
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet">
+   <!-- Favicon link -->
+   <link rel="icon" href="./assets/images/favicon.svg" />
+   <!-- Fontawesome Css Link -->
+   <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+   <!-- Slick Css Link -->
+   <link rel="stylesheet" href="./assets/css/slick.min.css" />
+   <!-- Venobox Css Link -->
+   <link rel="stylesheet" href="./assets/css/venobox.min.css" type="text/css" media="screen" />
+   <!-- Bootstrap Css Link -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="./assets/css/perfect-scrollbar.css">
+   <!-- Main Css Link -->
+   <link rel="stylesheet" href="./assets/css/style.css" />
+   <!-- Responsive Css Link -->
+   <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+
+   <section class="backtotop">
+      <i class="fa-solid fa-arrow-up"></i>
+   </section>
+
+
+   <!-- ======= Mobile nav toggle button ======= -->
+   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+
+   <!---------------------------------
+           Header Section Start 
+    ---------------------------------->
+   <div class="layout_container">
+      <aside id="sidebar">
+         <button id="sidebar_toggler" class="bg-transparent border-0">
+            <img src="./assets/images/Side Bar Minimize.svg" alt="">
+         </button>
+         <div class="profile">
+            <img class="img-fluid d-block mx-auto" src="./assets/images/logo.svg" alt="">
+         </div>
+         <nav id="nav">
+            <ul id="nav_accordion">
+               <li class="nav-item has_submenu hs">
+                  <a href="#" class="nav-link active" data-bs-toggle="collapse" data-bs-target="#dashboard">
+                     <img src="./assets/images/bx-home-smile.png" class="img-fluid" alt="">
+                     <span>Dashboard</span>
+                  </a>
+                  <ul id="dashboard" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">eCommerce</a></li>
+                     <li><a href="#" class="inner_col">CRM</a></li>
+                     <li><a href="#" class="inner_col">Analytics</a></li>
+                  </ul>
+               </li>
+               <hr>
+
+
+
+               <div class="nav_category_title">
+                  <h6>Product Management</h6>
+               </div>
+               <li class="nav-item has_submenu">
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#product_management">
+                     <img src="./assets/images/Components.png" class="img-fluid" alt="">
+                     <span>Category</span>
+                  </a>
+                  <ul id="product_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#product2_management">
+                     <img src="./assets/images/shopping-bags 1.png" class="img-fluid" alt="">
+                     <span>Product</span>
+                  </a>
+                  <ul id="product2_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+               </li>
+               <hr>
+
+
+
+               <div class="nav_category_title">
+                  <h6>Order Management</h6>
+               </div>
+               <li class="nav-item has_submenu">
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#order_management">
+                     <img src="./assets/images/Package Godown.png" class="img-fluid" alt="">
+                     <span>Order</span>
+                  </a>
+                  <ul id="order_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#order2_management">
+                     <img src="./assets/images/Parcel Return.png" class="img-fluid" alt="">
+                     <span>Refund Management</span>
+                  </a>
+                  <ul id="order2_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+               </li>
+               <hr>
+
+
+
+               <div class="nav_category_title">
+                  <h6>User Management</h6>
+               </div>
+               <li class="nav-item has_submenu">
+                  <a href="user.html" class="nav-link" data-bs-toggle="collapse" data-bs-target="#user_management">
+                     <img src="./assets/images/Users.png" class="img-fluid" alt="">
+                     <span>Users</span>
+                  </a>
+                  <ul id="user_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="user.html" class="inner_col">Basic Users</a></li>
+                     <li><a href="user.html" class="inner_col">Premium Users</a></li>
+                  </ul>
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#user2_management">
+                     <img src="./assets/images/Messages.png" class="img-fluid" alt="">
+                     <span>Messages</span>
+                  </a>
+                  <ul id="user2_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+               </li>
+               <hr>
+
+
+
+               <div class="nav_category_title">
+                  <h6>Board Management</h6>
+               </div>
+               <li class="nav-item has_submenu">
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#board_management">
+                     <img src="./assets/images/Office Bag.png" class="img-fluid" alt="">
+                     <span>Work Space</span>
+                  </a>
+                  <ul id="board_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#board2_management">
+                     <img src="./assets/images/Chat.png" class="img-fluid" alt="">
+                     <span>Discussion</span>
+                  </a>
+                  <ul id="board2_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+               </li>
+               <hr>
+
+
+
+               <div class="nav_category_title">
+                  <h6>Promotion Management</h6>
+               </div>
+               <li class="nav-item has_submenu">
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#promotion_management">
+                     <img src="./assets/images/Advertising.png" class="img-fluid" alt="">
+                     <span>Advertisement</span>
+                  </a>
+                  <ul id="promotion_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#promotion2_management">
+                     <img src="./assets/images/Sale.png" class="img-fluid" alt="">
+                     <span>Offers & Deals</span>
+                  </a>
+                  <ul id="promotion2_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#promotion3_management">
+                     <img src="./assets/images/Notification Bell.png" class="img-fluid" alt="">
+                     <span>Notifications</span>
+                  </a>
+                  <ul id="promotion3_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+               </li>
+               <hr>
+
+
+
+               <div class="nav_category_title">
+                  <h6>System Management</h6>
+               </div>
+               <li class="nav-item has_submenu">
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#system_management">
+                     <img src="./assets/images/Business.png" class="img-fluid" alt="">
+                     <span>Business Setup</span>
+                  </a>
+                  <ul id="system_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+                  <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#system2_management">
+                     <img src="./assets/images/Sale2.png" class="img-fluid" alt="">
+                     <span>3rd Party</span>
+                  </a>
+                  <ul id="system2_management" class="collapse" data-bs-parent="#nav_accordion">
+                     <li><a href="#" class="inner_col">Category-1</a></li>
+                     <li><a href="#" class="inner_col">Category-2</a></li>
+                     <li><a href="#" class="inner_col">Category-3</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
+      </aside>
+
+
+
+      <!-- ============================================================ Main Section Start  ==================================================================-->
+
+      <main id="main_page">
+         <!-- ========================================================= Topbar Section Start  =========================================================-->
+         <section id="topbar" class="d-flex flex-wrap p-1">
+            <div class="col-8 text-start d-flex search_bar">
+               <img class="img-fluid search_icon" src="./assets/images/search_icon.svg" alt="" style="cursor: pointer;">
+               <input type="text" placeholder="Search (Ctrl+/)" class="search_placeholder w-100 border-0">
+            </div>
+            <div class="col-4 text-end">
+               <ul>
+                  <a href="#" class="px-2">
+                     <img src="./assets/images/Translate.svg" alt="" class="img-fluid">
+                  </a>
+                  <a href="#" class="px-2">
+                     <img src="./assets/images/bx-grid-alt.svg" alt="" class="img-fluid">
+                  </a>
+                  <a href="#" class="px-2">
+                     <img src="./assets/images/bx-moon.svg" alt="" class="img-fluid">
+                  </a>
+                  <a href="#" class="px-2">
+                     <img src="./assets/images/Vector.svg" alt="" class="img-fluid">
+                  </a>
+                  <a href="#" class="p-2 dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     <img src="./assets/images/wBadge.svg" alt="" class="admin_img img-fluid">
+                  </a>
+               </ul>
+               <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><img src="./assets/images/wBadge.svg" alt="" class="px-2">John
+                        Doe</a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user me-2"></i>My Profile</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Setting</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-credit-card me-2"></i>Billing</a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headphones me-2"></i>Help</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-question-circle me-2"></i>FAQ</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-dollar-sign me-2"></i>Pricing</a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off me-2"></i>Log Out</a></li>
+
+               </ul>
+            </div>
+         </section>
+
+         <!--====================================================== Statistics Section Start  ====================================================-->
+         <section id="statistics" >
+               <div class="row">
+                  <div class="inner-stat">
+                     <h5>
+                        All Users
+                     </h5>
+                     <p class="d-flex flex-wrap justify-content-between align-items-center">
+                        <span>
+                           21,459
+                        </span>
+                        <span class="discount">
+                           (+29%)
+                        </span>
+                     </p>
+                  </div>
+                  <div class="inner-stat">
+                     <h5>
+                        Premium Users
+                     </h5>
+                     <p class="d-flex flex-wrap justify-content-between align-items-center">
+                        <span>
+                           21,459
+                        </span>
+                        <span class="discount">
+                           (+29%)
+                        </span>
+                     </p>
+                  </div>
+                  <div class="inner-stat">
+                     <h5>
+                        Basic Users
+                     </h5>
+                     <p class="d-flex flex-wrap justify-content-between align-items-center">
+                        <span>
+                           21,459
+                        </span>
+                        <span class="discount">
+                           (+29%)
+                        </span>
+                     </p>
+                  </div>
+                  <div class="inner-stat inner-stat-4">
+                     <h5>
+                        Blocked Users
+                     </h5>
+                     <p class="d-flex flex-wrap justify-content-between">
+                        <span>
+                           80
+                        </span>
+                        <span class="discount">
+                           (+29%)
+                        </span>
+                     </p>
+                  </div>
+               </div>
+         </section>
+
+
+
+
+
+         <!--====================================================== Filter Section Start  ====================================================-->
+
+         <section id="filter">
+            <div class="main_filter">
+               <h4>Search Filter</h4>
+               <div class="filter d-flex flex-wrap justify-content-between">
+                  <div class="col-3">
+                     <div class="input-group">
+                        <button
+                           class="ddown test btn w-75 btn-outline-secondary dropdown-toggle d-flex flex-wrap justify-content-between align-items-center"
+                           type="button" data-bs-toggle="dropdown" aria-expanded="false">Select Role</button>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Basic</a></li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li><a class="dropdown-item" href="#">Premium</a></li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li><a class="dropdown-item" href="#">Blocked</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-3">
+                     <div class="input-group">
+                        <button
+                           class="ddown test btn w-75 btn-outline-secondary dropdown-toggle d-flex flex-wrap justify-content-between align-items-center"
+                           type="button" data-bs-toggle="dropdown" aria-expanded="false">Select Status</button>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Offline</a></li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li><a class="dropdown-item" href="#">Online</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-6 bg-white search_filter d-flex flex-wrap justify-content-between align-items-center">
+                     <img src="./assets/images/search_icon.svg" alt="" style="cursor: pointer;">
+                     <input type="text" placeholder="Search User" style="border: none; width: 93%; height: 100%;" class="search_user">
+                  </div>
+                  <div class="col-2">
+                     <div class="input-group">
+                        <button
+                           class="ddown test ddown1 btn btn-outline-secondary dropdown-toggle d-flex flex-wrap justify-content-between align-items-center"
+                           type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                           style="border-radius: 8px;"><img src="./assets/images/Export Icon.png" alt=""
+                              class="img-fluid pe-3">Export </button>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="PDF.html">PDF</a></li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li><a class="dropdown-item" href="#">Excel</a></li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li><a class="dropdown-item" href="#">CSV</a></li>
+                           <li>
+                              <hr class="dropdown-divider">
+                           </li>
+                           <li><a class="dropdown-item" href="#">Word</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-2">
+                     <button class="search_filter test w-100 add_user_btn" style="margin-top: 15px;">
+                        <p>Add New User</p>
+                     </button>
+                  </div>
+               </div>
+               <form action="">
+                  <table class="w-100" id="user_table">
+                     <tr class="text-center text-uppercase filter_table_header">
+                        <td><input type="checkbox" class="d-inline" id="check-all"></td>
+                        <td>
+                           <h6>User</h6>
+                        </td>
+                        <td>Email</td>
+                        <td class=" px-2">Products</td>
+                        <td class=" px-2">Orders</td>
+                        <td class=" text-center">Subscription</td>
+                        <td>Action</td>
+                     </tr>
+                     <tr class="text-center">
+                        <td><input type="checkbox"></td>
+                        <td><img src="./assets/images/wBadge.svg" alt="" class="d-inline pe-3 img-fluid">
+                           <p class="d-inline">Jordan Stevenson</p>
+                        </td>
+                        <td> <a href="mailto:Jordan Stevenson@gmail.com">Jordan Stevenson@gmail.com</a>
+                        </td>
+                        <td class=" text-center">2</td>
+                        <td class=" text-center">1</td>
+                        <td class=" text-center basic"><a href="#">Basic</a></td>
+                        <td><button class="gold_hover test"><img src="./assets/images/Group 33918.svg"
+                                 alt=""></button><button class=" test mx-1  img-fluid"><i
+                                 class="fa-solid fa-trash-can"></i></button></td>
+                     </tr>
+                     <tr class="text-center">
+                        <td><input type="checkbox"></td>
+                        <td><img src="./assets/images/Avatar.png" alt="" class="d-inline pe-3 img-fluid">
+                           <p class="d-inline">Jordan Stevenson</p>
+                        </td>
+                        <td> <a href="mailto:Jordan Stevenson@gmail.com">Jordan Stevenson@gmail.com</a>
+                        </td>
+                        <td class=" text-center">2</td>
+                        <td class=" text-center">1</td>
+                        <td class=" text-center premium"><a href="#">Premium </a></td>
+                        <td><button class="gold_hover test"><img src="./assets/images/Group 33918.svg"
+                                 alt=""></button><button class=" test mx-1  img-fluid"><i
+                                 class="fa-solid fa-trash-can"></i></button></td>
+                     </tr>
+                     <tr class="text-center">
+                        <td><input type="checkbox"></td>
+                        <td><img src="./assets/images/Avatar1.png" alt="" class="d-inline pe-3 img-fluid">
+                           <p class="d-inline">Jordan Stevenson</p>
+                        </td>
+                        <td> <a href="mailto:Jordan Stevenson@gmail.com">Jordan Stevenson@gmail.com</a>
+                        </td>
+                        <td class=" text-center">2</td>
+                        <td class=" text-center">1</td>
+                        <td class=" text-center premium"><a href="#">Premium </a></td>
+                        <td><button class="gold_hover test"><img src="./assets/images/Group 33918.svg"
+                                 alt=""></button><button class=" test mx-1 img-fluid"><i
+                                 class="fa-solid fa-trash-can"></i></button></td>
+                     </tr>
+                     <tr class="text-center">
+                        <td><input type="checkbox"></td>
+                        <td><img src="./assets/images/Avatar2.png" alt="" class="d-inline pe-3 img-fluid">
+                           <p class="d-inline">Jordan Stevenson</p>
+                        </td>
+                        <td> <a href="mailto:Jordan Stevenson@gmail.com">Jordan Stevenson@gmail.com</a>
+                        </td>
+                        <td class=" text-center">2</td>
+                        <td class=" text-center">1</td>
+                        <td class=" text-center basic"><a href="#">Basic</a></td>
+                        <td><button class="gold_hover test"><img src="./assets/images/Group 33918.svg"
+                                 alt=""></button><button class=" test mx-1 img-fluid"><i
+                                 class="fa-solid fa-trash-can"></i></button></td>
+                     </tr>
+                     <tr class="text-center">
+                        <td><input type="checkbox"></td>
+                        <td><img src="./assets/images/Avatar3.png" alt="" class="d-inline pe-3 img-fluid">
+                           <p class="d-inline">Jordan Stevenson</p>
+                        </td>
+                        <td> <a href="mailto:Jordan Stevenson@gmail.com">Jordan Stevenson@gmail.com</a>
+                        </td>
+                        <td class=" text-center">2</td>
+                        <td class=" text-center">1</td>
+                        <td class=" text-center premium"><a href="#">Premium </a></td>
+                        <td><button class="gold_hover test"><img src="./assets/images/Group 33918.svg"
+                                 alt=""></button><button class=" test mx-1 img-fluid"><i
+                                 class="fa-solid fa-trash-can"></i></button></td>
+                     </tr>
+                     <tr class="text-center">
+                        <td><input type="checkbox"></td>
+                        <td><img src="./assets/images/Avatar4.png" alt="" class="d-inline pe-3 img-fluid">
+                           <p class="d-inline">Jordan Stevenson</p>
+                        </td>
+                        <td> <a href="mailto:Jordan Stevenson@gmail.com">Jordan Stevenson@gmail.com</a>
+                        </td>
+                        <td class=" text-center">2</td>
+                        <td class=" text-center">1</td>
+                        <td class=" text-center basic"><a href="#">Basic</a></td>
+                        <td><button class="gold_hover test"><img src="./assets/images/Group 33918.svg"
+                                 alt=""></button><button class=" test mx-1 img-fluid"><i
+                                 class="fa-solid fa-trash-can"></i></button></td>
+                     </tr>
+                     <tr class="text-center">
+                        <td><input type="checkbox"></td>
+                        <td><img src="./assets/images/Avatar5.png" alt="" class="d-inline pe-3 img-fluid">
+                           <p class="d-inline">Jordan Stevenson</p>
+                        </td>
+                        <td> <a href="mailto:Jordan Stevenson@gmail.com">Jordan Stevenson@gmail.com</a>
+                        </td>
+                        <td class=" text-center">-</td>
+                        <td class=" text-center">-</td>
+                        <td class=" text-center blocked"><a href="#">Blocked </a></td>
+                        <td><button class="gold_hover test"><img src="./assets/images/Group 33918.svg"
+                                 alt=""></button><button class=" test mx-1 img-fluid"><i
+                                 class="fa-solid fa-trash-can"></i></button></td>
+                     </tr>
+                     <tr class="text-center">
+                        <td><input type="checkbox"></td>
+                        <td><img src="./assets/images/Avatar6.png" alt="" class="d-inline pe-3 img-fluid">
+                           <p class="d-inline">Jordan Stevenson</p>
+                        </td>
+                        <td> <a href="mailto:Jordan Stevenson@gmail.com">Jordan Stevenson@gmail.com</a>
+                        </td>
+                        <td class=" text-center">2</td>
+                        <td class=" text-center">1</td>
+                        <td class=" text-center premium"><a href="#">Premium </a></td>
+                        <td><button class="gold_hover test"><img src="./assets/images/Group 33918.svg"
+                                 alt=""></button><button class=" test mx-1 img-fluid"><i
+                                 class="fa-solid fa-trash-can"></i></button></td>
+                     </tr>
+                     <tr class="text-center">
+                        <td><input type="checkbox"></td>
+                        <td><img src="./assets/images/Avatar7.png" alt="" class="d-inline pe-3 img-fluid">
+                           <p class="d-inline">Jordan Stevenson</p>
+                        </td>
+                        <td> <a href="mailto:Jordan Stevenson@gmail.com">Jordan Stevenson@gmail.com</a>
+                        </td>
+                        <td class=" text-center">2</td>
+                        <td class=" text-center">1</td>
+                        <td class=" text-center premium"><a href="#">Premium </a></td>
+                        <td><button class="gold_hover test"><img src="./assets/images/Group 33918.svg"
+                                 alt=""></button><button class=" test mx-1 img-fluid"><i
+                                 class="fa-solid fa-trash-can"></i></button></td>
+                     </tr>
+                  </table>
+                  <div class="d-flex flex-wrap justify-content-between align-items-center">
+                     <div>
+                        <div class="input-group">
+                           <button
+                              class="ddown ddown2 btn btn-outline-secondary dropdown-toggle d-flex flex-wrap justify-content-between align-items-center"
+                              type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                              style="border-radius: 8px;">30</button>
+                           <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">30</a></li>
+                              <li>
+                                 <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">50</a></li>
+                              <li>
+                                 <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">100</a></li>
+                           </ul>
+                           <p class="d-flex flex-wrap align-items-center p-3 user_pp">Show Users per Page</p>
+                        </div>
+                     </div>
+                     <div aria-label="...">
+                        <ul class="pagination">
+                           <li class="page-item">
+                              <span class="page-link">Previous</span>
+                           </li>
+                           <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                           <li class="page-item " aria-current="page">
+                              <a href="#"><span class="page-link">2</span></a>
+                           </li>
+                           <li class="page-item"><a class="page-link" href="#">3</a></li>
+                           <li class="page-item">
+                              <a class="page-link" href="#">Next</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+
+
+
+
+
+
+      </main>
+   </div>
+
+   <!-- End Header -->
+
+   <!-- Menu -->
+
+
+
+
+   <!---------------------------------
+           Header Section End
+    ---------------------------------->
+
+   <!-- Jquery Js Link -->
+   <script src="./assets/js/jquery-1.12.4.min.js"></script>
+   <!-- Slick Js Link -->
+   <script src="./assets/js/slick.min.js"></script>
+   <!-- Bootstrap Js Link -->
+   <script src="./assets/js/bootstrap.min.js"></script>
+   <script src="./assets/js/jquery.countdown.min.js"></script>
+   <script src="./assets/js/venobox.min.js"></script>
+   <script src="./assets/js/perfect-scrollbar.min.js"></script>
+   <!-- Main Js Link -->
+   <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

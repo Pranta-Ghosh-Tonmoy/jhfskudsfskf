@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Mart</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Favicon link -->
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <!-- Fontawesome Css Link -->
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <!-- Slick Css Link -->
+    <link rel="stylesheet" href="./assets/css/slick.min.css" />
+    <!-- Venobox Css Link -->
+    <link rel="stylesheet" href="./assets/css/venobox.min.css" type="text/css" media="screen" />
+    <!-- Bootstrap Css Link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/perfect-scrollbar.css">
+    <!-- Main Css Link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Responsive Css Link -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+
+    <section class="backtotop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </section>
+
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+
+    <!---------------------------------
+           Header Section Start 
+    ---------------------------------->
+    <div class="layout_container">
+        <aside id="sidebar">
+            <button id="sidebar_toggler" class="bg-transparent border-0">
+                <img src="./assets/images/Side Bar Minimize.svg" alt="">
+            </button>
+            <div class="profile">
+                <a href="index.html">
+                    <img class="img-fluid d-block mx-auto" src="./assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <nav id="nav">
+                <ul id="nav_accordion">
+                    <li class="nav-item has_submenu hs">
+                        <a href="#" class="nav-link active" data-bs-toggle="collapse" data-bs-target="#dashboard">
+                            <img src="./assets/images/bx-home-smile.png" class="img-fluid" alt="">
+                            <span>Dashboard</span>
+                        </a>
+                        <ul id="dashboard" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">eCommerce</a></li>
+                            <li><a href="#" class="inner_col">CRM</a></li>
+                            <li><a href="#" class="inner_col">Analytics</a></li>
+                        </ul>
+                    </li>
+                    <hr>
+
+
+
+                    <div class="nav_category_title">
+                        <h6>Product Management</h6>
+                    </div>
+                    <li class="nav-item has_submenu">
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#product_management">
+                            <img src="./assets/images/Components.png" class="img-fluid" alt="">
+                            <span>Category</span>
+                        </a>
+                        <ul id="product_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Category-1</a></li>
+                            <li><a href="#" class="inner_col">Category-2</a></li>
+                            <li><a href="#" class="inner_col">Category-3</a></li>
+                        </ul>
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#product2_management">
+                            <img src="./assets/images/shopping-bags 1.png" class="img-fluid" alt="">
+                            <span>Product</span>
+                        </a>
+                        <ul id="product2_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Category-1</a></li>
+                            <li><a href="#" class="inner_col">Category-2</a></li>
+                            <li><a href="#" class="inner_col">Category-3</a></li>
+                        </ul>
+                    </li>
+                    <hr>
+
+
+
+                    <div class="nav_category_title">
+                        <h6>Order Management</h6>
+                    </div>
+                    <li class="nav-item has_submenu">
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#order_management">
+                            <img src="./assets/images/Package Godown.png" class="img-fluid" alt="">
+                            <span>Order</span>
+                        </a>
+                        <ul id="order_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Category-1</a></li>
+                            <li><a href="#" class="inner_col">Category-2</a></li>
+                            <li><a href="#" class="inner_col">Category-3</a></li>
+                        </ul>
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#order2_management">
+                            <img src="./assets/images/Parcel Return.png" class="img-fluid" alt="">
+                            <span>Refund Management</span>
+                        </a>
+                        <ul id="order2_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Category-1</a></li>
+                            <li><a href="#" class="inner_col">Category-2</a></li>
+                            <li><a href="#" class="inner_col">Category-3</a></li>
+                        </ul>
+                    </li>
+                    <hr>
+
+
+
+                    <div class="nav_category_title">
+                        <h6>User Management</h6>
+                    </div>
+                    <li class="nav-item has_submenu">
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#user_management">
+                            <img src="./assets/images/Users.png" class="img-fluid" alt="">
+                            <span>Users</span>
+                        </a>
+                        <ul id="user_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="user.html" class="inner_col">Basic Users</a></li>
+                            <li><a href="user.html" class="inner_col">Premium Users</a></li>
+                        </ul>
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#user2_management">
+                            <img src="./assets/images/Messages.png" class="img-fluid" alt="">
+                            <span>Messages</span>
+                        </a>
+                        <ul id="user2_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Basic Users</a></li>
+                            <li><a href="#" class="inner_col">Premium Users</a></li>
+                        </ul>
+                    </li>
+                    <hr>
+
+
+
+                    <div class="nav_category_title">
+                        <h6>Board Management</h6>
+                    </div>
+                    <li class="nav-item has_submenu">
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#board_management">
+                            <img src="./assets/images/Office Bag.png" class="img-fluid" alt="">
+                            <span>Work Space</span>
+                        </a>
+                        <ul id="board_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Category-1</a></li>
+                            <li><a href="#" class="inner_col">Category-2</a></li>
+                            <li><a href="#" class="inner_col">Category-3</a></li>
+                        </ul>
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#board2_management">
+                            <img src="./assets/images/Chat.png" class="img-fluid" alt="">
+                            <span>Discussion</span>
+                        </a>
+                        <ul id="board2_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Category-1</a></li>
+                            <li><a href="#" class="inner_col">Category-2</a></li>
+                            <li><a href="#" class="inner_col">Category-3</a></li>
+                        </ul>
+                    </li>
+                    <hr>
+
+
+
+                    <div class="nav_category_title">
+                        <h6>Promotion Management</h6>
+                    </div>
+                    <li class="nav-item has_submenu">
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#promotion_management">
+                            <img src="./assets/images/Advertising.png" class="img-fluid" alt="">
+                            <span>Advertisement</span>
+                        </a>
+                        <ul id="promotion_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Category-1</a></li>
+                            <li><a href="#" class="inner_col">Category-2</a></li>
+                            <li><a href="#" class="inner_col">Category-3</a></li>
+                        </ul>
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#promotion2_management">
+                            <img src="./assets/images/Sale.png" class="img-fluid" alt="">
+                            <span>Offers & Deals</span>
+                        </a>
+                        <ul id="promotion2_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Category-1</a></li>
+                            <li><a href="#" class="inner_col">Category-2</a></li>
+                            <li><a href="#" class="inner_col">Category-3</a></li>
+                        </ul>
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#promotion3_management">
+                            <img src="./assets/images/Notification Bell.png" class="img-fluid" alt="">
+                            <span>Notifications</span>
+                        </a>
+                        <ul id="promotion3_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Category-1</a></li>
+                            <li><a href="#" class="inner_col">Category-2</a></li>
+                            <li><a href="#" class="inner_col">Category-3</a></li>
+                        </ul>
+                    </li>
+                    <hr>
+
+
+
+                    <div class="nav_category_title">
+                        <h6>System Management</h6>
+                    </div>
+                    <li class="nav-item has_submenu">
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#system_management">
+                            <img src="./assets/images/Business.png" class="img-fluid" alt="">
+                            <span>Business Setup</span>
+                        </a>
+                        <ul id="system_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Category-1</a></li>
+                            <li><a href="#" class="inner_col">Category-2</a></li>
+                            <li><a href="#" class="inner_col">Category-3</a></li>
+                        </ul>
+                        <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#system2_management">
+                            <img src="./assets/images/Sale2.png" class="img-fluid" alt="">
+                            <span>3rd Party</span>
+                        </a>
+                        <ul id="system2_management" class="collapse" data-bs-parent="#nav_accordion">
+                            <li><a href="#" class="inner_col">Category-1</a></li>
+                            <li><a href="#" class="inner_col">Category-2</a></li>
+                            <li><a href="#" class="inner_col">Category-3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+
+
+        <!-- ======================================================= Main Section Start ======================================================-->
+
+        <main id="main_page" class="d-flex flex-wrap">
+            <!-- ========================================================= Topbar Section Start =========================================================-->
+            <section id="topbar" class="d-flex flex-wrap justify-content-start">
+                <div class="col-8 text-start d-flex search_bar">
+                    <img class="p-3" src="./assets/images/search_icon.svg" alt="" style="cursor: pointer;">
+                    <input type="text" placeholder="Search (Ctrl+/)" class="search_placeholder w-100 border-0">
+                </div>
+                <div class="col-4 text-end">
+                    <ul>
+                        <a href="#" class="px-2">
+                            <img src="./assets/images/Translate.png" alt="">
+                        </a>
+                        <a href="#" class="px-2">
+                            <img src="./assets/images/Vector.png" alt="">
+                        </a>
+                        <a href="#" class="px-2">
+                            <img src="./assets/images/Vector (1).png" alt="">
+                        </a>
+                        <a href="#" class="px-2">
+                            <img src="./assets/images/Vector (2).png" alt="">
+                        </a>
+                        <a href="#" class="p-2 dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/images/wBadge.png" alt="" class="admin_img">
+                        </a>
+                    </ul>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="./assets/images/wBadge.png" alt="" class="px-2">John Doe
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user me-2"></i>My Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Setting</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-credit-card me-2"></i>Billing</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-headphones me-2"></i>Help</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-question-circle me-2"></i>FAQ</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-dollar-sign me-2"></i>Pricing</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-power-off me-2"></i>Log Out</a></li>
+
+                    </ul>
+                </div>
+            </section>
+
+
+
+
+            <!-- ================================================== Users Profile Section Start ===================================================-->
+
+            <section id="user_profile" class="col-4">
+                <div class="personal_info text-center bg-white">
+                    <div class="position-relative">
+                        <img src="./assets/images/Rectangle 2527.svg" alt="" class="personal_info_img">
+                        <img src="./assets/images/Premium_User.svg" alt="" class="premium_user_img">
+                    </div>
+                    <a href="user.html">
+                        <h4>Apple Official</h4>
+                    </a>
+                    <div class="users_info d-flex flex-wrap justify-content-between">
+                        <p>
+                            3K <br><span>Products</span>
+                        </p>
+                        <p>
+                            800K <br><span>Orders</span>
+                        </p>
+                    </div>
+                    <h5>Details</h5>
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td>Sebile Kizilhan</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><a href="mailto:sebilekizilhan78@gmail.com">sebilekizilhan78@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Contact</td>
+                            <td>
+                                <a href="callto:(480) 555-0103">(480) 555-0103</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Country </td>
+                            <td>Qatar</td>
+                        </tr>
+                    </table>
+                    <div class="button_list">
+                        <button class="test col-8">Send Message</button>
+                        <button class="test col-8">Send Warning</button>
+                        <button class="test col-8">Send Notification</button>
+                        <button class="test col-8">Send Mail</button>
+                        <button class="test col-8">Send SMS</button>
+                        <button class="test col-8">Block Account</button>
+                    </div>
+                </div>
+                <div class="bg-white mt-5 subs_info">
+                    <div class="subscription_info">
+                        <h5>Subscription</h5>
+                        <p class="text-end">150$ month</p>
+                        <ul>
+                            <li>Subscription History</li>
+                            <li>Payment Details</li>
+                        </ul>
+                        <button>Custom Offer</button>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- ================================================ Users Main Profile Section Start ===============================================-->
+
+            <section class="col-8 px-2" id="user_main_profile">
+                <div class="main_profile_nav">
+                    <button class="test"><img src="./assets/images/store.png" alt=""> Store</button>
+                    <button class="test"><img src="./assets/images/Account Icon.png" alt=""> Account</button>
+                    <button class="test"><img src="./assets/images/lock.png" alt=""> Security</button>
+                    <button class="test"><img src="./assets/images/Group.png" alt=""> Billing & Plans</button>
+                    <button class="test"><img src="./assets/images/Layer 5.png" alt=""> Notifications</button>
+                </div>
+                <div class="container">
+                    <div class="store_product">
+                        <div class="store_product_nav d-flex flex-wrap justify-content-between align-items-center">
+                            <h4>Store Products</h4>
+                            <div class="d-flex flex-wrap sub_store_product_nav">
+                                <div class="text-start d-flex search_bar me-1">
+                                    <img class="p-3" src="./assets/images/search_icon.svg" alt=""
+                                        style="cursor: pointer;">
+                                    <input type="text" placeholder="Search Product"
+                                        class="search_placeholder w-100 border-0 ">
+                                </div>
+                                <button class="mx-1"><img src="./assets/images/calender.png"
+                                        alt=""></button>
+                                <button class="mx-1"><img src="./assets/images/Export Data.png"
+                                        alt=""></button>
+                                <button class="mx-1"><img src="./assets/images/Filter.png"
+                                        alt=""></button>
+                            </div>
+                        </div>
+
+
+
+
+                        <table class="w-100" id="user_table">
+                            <tr class="text-center text-uppercase">
+                                <td><input type="checkbox" class="d-inline" id="check-all"></td>
+                                <td>
+                                    <h6>Name</h6>
+                                </td>
+                                <td><h6>Code</h6></td>
+                                <td class=" px-2"><h6>Sales</h6></td>
+                                <td class=" px-2"><h6>Stock</h6></td>
+                                <td class=" text-center"><h6>Price</h6></td>
+                                <td><h6>Status</h6></td>
+                            </tr>
+                            <tr class="text-center">
+                                <td><input type="checkbox" class="d-inline"></td>
+                                <td class="d-flex flex-wrap product_name">
+                                    <img src="./assets/images/Product Image.svg" alt="">
+                                    <h5>Ultraboost Shoes</h5>
+                                </td>
+                                <td>PT156</td>
+                                <td class="product_sales px-2">856</td>
+                                <td class=" px-2">406</td>
+                                <td class=" text-center">$250 - F</td>
+                                <td><p class="basic">  In-stock</p></td>
+                            </tr>
+                            <tr class="text-center">
+                                <td><input type="checkbox" class="d-inline"></td>
+                                <td class="d-flex flex-wrap product_name">
+                                    <img src="./assets/images/Product Image.svg" alt="">
+                                    <h5>Ultraboost Shoes</h5>
+                                </td>
+                                <td>PT156</td>
+                                <td class="product_sales px-2">856</td>
+                                <td class=" px-2">406</td>
+                                <td class=" text-center">$250 - F</td>
+                                <td><p class="basic">  In-stock</p></td>
+                            </tr>
+                            <tr class="text-center">
+                                <td><input type="checkbox" class="d-inline"></td>
+                                <td class="d-flex flex-wrap product_name">
+                                    <img src="./assets/images/Product Image.svg" alt="">
+                                    <h5>Ultraboost Shoes</h5>
+                                </td>
+                                <td>PT156</td>
+                                <td class="product_sales px-2">856</td>
+                                <td class=" px-2">406</td>
+                                <td class=" text-center">$250 - F</td>
+                                <td><p class="basic">  In-stock</p></td>
+                            </tr>
+                            <tr class="text-center">
+                                <td><input type="checkbox" class="d-inline"></td>
+                                <td class="d-flex flex-wrap product_name">
+                                    <img src="./assets/images/Product Image.svg" alt="">
+                                    <h5>Ultraboost Shoes</h5>
+                                </td>
+                                <td>PT156</td>
+                                <td class="product_sales px-2">856</td>
+                                <td class=" px-2">406</td>
+                                <td class=" text-center">$250 - F</td>
+                                <td><p class="blocked">  Out of Stock</p></td>
+                            </tr>
+                        </table>
+                        <div class="d-flex flex-wrap justify-content-end view_more">
+                            <a href="#" class="d-inline-block"> View More <img src="./assets/images/View_more_icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="col-4 Store_Social_Network d-flex flex-wrap justify-content-center">
+                        <h5 class="text-start">Store Social Network</h5>
+                        <a href="#" class="d-inline-block text-center">896 Followers</a>
+                        <a href="#" class="d-inline-block text-center">154 Followings</a>
+                    </div>
+                    <div class="col-8 Store_Messages">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <h5>Store Messages</h5>
+                            <a href="#">Total Messages - 734</a>
+                        </div>
+                        <div class="d-flex flex-wrap ">
+                            <div>
+                                <img src="./assets/images/Avatar.png" alt="" class="img-fluid h-auto">
+                            </div>
+                            <div>
+                                <h6>Elizabeth</h6>
+                                <p><span>June 17, 2021 05:30pm</span><br><span>Lorem ipsum dolor sit.</span></p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap ">
+                            <div>
+                                <img src="./assets/images/Avatar.png" alt="" class="img-fluid h-auto">
+                            </div>
+                            <div>
+                                <h6>Elizabeth</h6>
+                                <p><span>June 17, 2021 05:30pm</span><br><span>Lorem ipsum dolor sit.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="store_revenue d-flex flex-wrap justify-content-between">
+                    <h5 class="col-12">Store Revenue</h5>
+                    <div class="col-6 d-flex flex-wrap justify-content-between">
+                        <div class="w-100">
+                            <h6 class="d-flex flex-wrap justify-content-between"><span>Net Earning</span>
+                                <span>5600$</span>
+                            </h6>
+                        </div>
+                        <div class="w-100">
+                            <h6 class="d-flex flex-wrap justify-content-between"><span>Pending Clearance</span>
+                                <span>1000$</span>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <p class="d-flex flex-wrap justify-content-between"><span>Withdraw</span> <span>3800$</span></p>
+                        <p class="d-flex flex-wrap justify-content-between"><span>Used for Purchase</span>
+                            <span>3800$</span>
+                        </p>
+                        <p class="d-flex flex-wrap justify-content-between"><span>Available for Withdraw</span>
+                            <span>3800$</span>
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="store_product">
+                    <div class="store_product_nav d-flex flex-wrap justify-content-between">
+                        <h4>Store Products</h4>
+                        <div class="d-flex flex-wrap sub_store_product_nav">
+                            <div class="text-start d-flex search_bar me-1">
+                                <img class="p-3" src="./assets/images/search_icon.svg" alt="" style="cursor: pointer;">
+                                <input type="text" placeholder="Search Product"
+                                    class="search_placeholder w-100 border-0 ">
+                            </div>
+                            <button class="mx-1 bg-transparent border-0"><img src="./assets/images/calender.png"
+                                    alt=""></button>
+                            <button class="mx-1 bg-transparent border-0"><img src="./assets/images/Export Data.png"
+                                    alt=""></button>
+                            <button class="mx-1 bg-transparent border-0"><img src="./assets/images/Filter.png"
+                                    alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <table class="w-100" id="user_table">
+                    <tr class="text-center text-uppercase">
+                        <td><input type="checkbox" class="d-inline" id="check-all"></td>
+                        <td>
+                            <h6>order id</h6>
+                        </td>
+                        <td>PRODUCTS</td>
+                        <td class=" px-2">Date </td>
+                        <td class=" px-2">CUSTOMER</td>
+                        <td class=" text-center">REVENUE</td>
+                        <td>Status</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td><input type="checkbox" class="d-inline" id="check-all"></td>
+                        <td>PT156</td>
+                        <td class="d-flex flex-wrap">
+                            <img src="./assets/images/Product Image.svg" alt="">
+                            <p>8 items</p>
+                        </td>
+                        <td class=" px-2">Jan 10, 2020</td>
+                        <td class=" px-2">Ronald Jones</td>
+                        <td class=" text-center">
+                            <p class="d-flex flex-wrap justify-content-center">
+                                <span>Ronald Jones</span>
+                                <span>CP-Negotible</span>
+                            </p>
+                        </td>
+                        <td>In-stock</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td><input type="checkbox" class="d-inline" id="check-all"></td>
+                        <td>PT156</td>
+                        <td class="d-flex flex-wrap">
+                            <img src="./assets/images/Product Image.svg" alt="">
+                            <p>8 items</p>
+                        </td>
+                        <td class=" px-2">Jan 10, 2020</td>
+                        <td class=" px-2">Ronald Jones</td>
+                        <td class=" text-center">
+                            <p class="d-flex flex-wrap justify-content-center">
+                                <span>Ronald Jones</span>
+                                <span>CP-Negotible</span>
+                            </p>
+                        </td>
+                        <td>In-stock</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td><input type="checkbox" class="d-inline" id="check-all"></td>
+                        <td>PT156</td>
+                        <td class="d-flex flex-wrap">
+                            <img src="./assets/images/Product Image.svg" alt="">
+                            <p>8 items</p>
+                        </td>
+                        <td class=" px-2">Jan 10, 2020</td>
+                        <td class=" px-2">Ronald Jones</td>
+                        <td class=" text-center">
+                            <p class="d-flex flex-wrap justify-content-center">
+                                <span>Ronald Jones</span>
+                                <span>CP-Negotible</span>
+                            </p>
+                        </td>
+                        <td>In-stock</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td><input type="checkbox" class="d-inline" id="check-all"></td>
+                        <td>PT156</td>
+                        <td class="d-flex flex-wrap">
+                            <img src="./assets/images/Product Image.svg" alt="">
+                            <p>8 items</p>
+                        </td>
+                        <td class=" px-2">Jan 10, 2020</td>
+                        <td class=" px-2">Ronald Jones</td>
+                        <td class=" text-center">
+                            <p class="d-flex flex-wrap justify-content-center"><span>Ronald Jones</span>
+                                <span>CP-Negotible</span>
+                            </p>
+                        </td>
+                        <td>In-stock</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <!-- End Header -->
+
+    <!-- Menu -->
+
+
+
+
+    <!---------------------------------
+           Header Section End
+    ---------------------------------->
+
+    <!-- Jquery Js Link -->
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <!-- Slick Js Link -->
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- Bootstrap Js Link -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/venobox.min.js"></script>
+    <script src="./assets/js/perfect-scrollbar.min.js"></script>
+    <!-- Main Js Link -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
